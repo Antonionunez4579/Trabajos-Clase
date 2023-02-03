@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practica forms</title>
+</head>
+<body>
+    <form action=""></form><!--action:indica la ubicación del programa que procesará la información enviada por el navegador, cuando el formulario sea despachado.  -->
+  <form method=""></form><!--indica cómo debe el navegador adjuntar los datos del formulario a la petición.-->
+  <br>
+  <br>
+  <input type="button" onclick="alert('¡A viajar te da la bienvenida!')" value="¡Haz click!"> <!--Un botón pulsador sin ningún comportamiento predeterminado mostrando el valor del atributo valor, vacío de forma predeterminada.-->
+  <br>
+  <br>
+  <form>
+    Nombre<br>
+    <input type="text" name="firstname"><br>
+    Apellidos<br>
+    <input type="text" name="lastname"><br>
+    Acompañante<br>
+    <input type="text" name="Acompañante"><br>
+    <br>
+    <form>
+        Teléfono <br>
+        <input type="tel" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      </form> <!--Un control para introducir un número de teléfono. Muestra un teclado telefónico en algunos dispositivos con teclados dinámicos.-->
+      <br>
+<form>
+    Correo electrónico <br>
+    <input type="email" name="email">
+  </form><!--Un campo para editar una dirección de correo electrónico. Parece una entrada de texto, pero tiene parámetros de validación y teclado relevante para admitir navegadores y dispositivos con teclados dinámicos.-->
+  <br>
+  <form>
+    ¿Cuando quires viajar? (fecha y hora) <br>
+    <input type="datetime-local" name="daytime">
+  </form><!--Un control para introducir un valor de tiempo sin zona horaria-->
+  <br>
+  <form>
+    ¿Fecha de regreso? (fecha y hora) <br>
+    <input type="datetime-local" name="daytime">
+  </form><!--Un control para introducir un valor de tiempo sin zona horaria-->
+  <br>
+  <form>
+    Danos una calificacion sobre nuestro servicio <br>
+     <br>
+    1 - 10
+    <input type="range" name="points" min="1" max="10">
+  </form><!--Proporciona un slider para seleccionar un valor numérico entre dos valores (por defecto de 0 a 100)-->
+  <br>
+  <form action="/my-handling-form-page" method="post">
+    Dejanos una pequeña retroalimentacion <br>
+    <ul>
+     <li>
+       <label for="name">Nombre: <br></label> <!--un elemento utilizado para proveer una etiqueta a los controles del formulario.-->
+       <input type="text" id="name" name="user_name" />
+     </li>
+     <li>
+       <label for="mail">Correo electrónico: <br></label>
+       <input type="email" id="mail" name="user_email" />
+     </li>
+     <li>
+       <label for="msg">Mensaje: <br></label>
+       <textarea id="msg" name="user_message"></textarea> <!--un control usado para ingresar un trozo de texto que consta de una o más líneas.-->
+     </li>
+     <style>
+        form {
+          /* Centrar el formulario en la página */
+          margin: 0 auto;
+          width: 400px;
+          /* Esquema del formulario */
+          padding: 1em;
+          border: 0px solid #CCC;
+          border-radius: 0em;
+        }
+        
+        ul {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+        }
+        
+        form li + li {
+          margin-top: 1em;
+        }
+        
+        label {
+          /* Tamaño y alineación uniforme */
+          display: inline-block;
+          width: 90px;
+          text-align: right;
+        }
+        
+        input,
+        textarea {
+          /* Para asegurarse de que todos los campos de texto tienen la misma configuración de letra
+             Por defecto, las áreas de texto tienen un tipo de letra monoespaciada */
+          font: 1em sans-serif;
+        
+          /* Tamaño uniforme del campo de texto */
+          width: 300px;
+          box-sizing: border-box;
+        
+          /* Hacer coincidir los bordes del campo del formulario */
+          border: 1px solid #999;
+        }
+        
+        input:focus,
+        textarea:focus {
+          /* Destacado adicional para elementos que tienen el cursor */
+          border-color: #000;
+        }
+        
+        textarea {
+          /* Alinear los campos de texto multilínea con sus etiquetas */
+          vertical-align: top;
+        
+          /* Proporcionar espacio para escribir texto */
+          height: 5em;
+        }
+        
+        .button {
+          /* Alinear los botones con los campos de texto */
+          padding-left: 90px; /* mismo tamaño que los elementos de la etiqueta */
+        }
+        
+        button {
+          /* Este margen adicional representa aproximadamente el mismo espacio que el espacio
+             entre las etiquetas y sus campos de texto */
+          margin-left: .5em;
+        }
+        
+             </style> <br>
+               <form action=""></form><!--action:indica la ubicación del programa que procesará la información enviada por el navegador, cuando el formulario sea despachado.  -->
+               <form method=""></form><!--indica cómo debe el navegador adjuntar los datos del formulario a la petición.-->
+               <br>
+               <br>
+               <input type="button" onclick="alert('Gracias por usar nuestro servicio ¡Esperamos verte pronto!')" value="¡Haz click!"> <!--Un botón pulsador sin ningún comportamiento predeterminado mostrando el valor del atributo valor, vacío de forma predeterminada.-->
+               <br>
+</body>
+</html>
