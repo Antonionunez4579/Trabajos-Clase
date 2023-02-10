@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplos js Web</title>
+</head>
+<body>
+    <h1>JavaScript</h1>
+        <script>
+        function saludar(){
+            console.log("Hola mundo");
+        }
+
+        function sumar (v1 , v2){
+            return (v1 + v2);
+        }
+    </script>
+    <script>
+        saludar();
+        console.log("El resultado es",sumar(3,5));
+    </script>
+    <script>
+        function llamaNombre (nombre){
+            alert("Hola, " + nombre)
+        }
+    </script>
+    <script>
+        let nombre = prompt("Cual es tu nombre"); 
+        llamaNombre(nombre);
+    </script>
+    <script src="../IINTRO-WEB-7/Js/TiposDatosVariable.js"></script>
+</body>
+</html>
